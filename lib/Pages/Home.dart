@@ -1,3 +1,4 @@
+import 'package:bookingapp/Common/BottomNavi.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -16,7 +17,9 @@ class _HomeState extends State<Home> {
           appBar: AppBar(
             title: Text('My RealEstate App'),
             centerTitle: true,
+            elevation: 0,
           ),
+          bottomNavigationBar: btmnavigation(),
           body: SafeArea(child: Text('hey')),
         ));
   }
